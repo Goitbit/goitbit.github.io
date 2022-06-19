@@ -71,19 +71,62 @@ hr {
 
 #slajdshow {
     width: 100%;
+    position: relative;
+    max-width: 100%;
 }
 
 #slajdimg {
     display:block;
-    max-width: 50%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
+
+#arrows a {   
+    position: absolute;
+    top: 15rem;  
+    padding: 2rem;
+    background-color: #585454a8;
+    color: white;
+    border-radius:1rem;
+    user-select: none;
+}
+
+#leftarrow {
+    left:15%;
+}
+
+#rightarrow {
+    right:15%;
+}
+
+#slajddescription {
+    bottom: 0;
+    width: 70%;
+    margin-left:inherit;
+    margin-right:inherit;
+    background-color: #585454a8;
+    height: 5rem;
+    position:absolute;
+}
+
+#arrows a:hover {
+    background-color: black;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 800px) {
     #slajdimg {
         width: 100%;
         max-width: 100%;
+    }
+    #leftarrow {
+    left:0%;
+    }
+    #rightarrow {
+    right: 0%;
     }
 }
 
