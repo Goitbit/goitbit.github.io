@@ -1,0 +1,92 @@
+body {
+    background-color: #cbcbcb;
+    font-family: helvetica, arial, sans-serif;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: courier new, monospace;
+    padding: 1rem;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#options {
+    padding: 1rem;
+}
+
+#options a {
+    padding: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+hr {
+    border: 0.1px solid #959595;
+}
+
+/* NAVBAR ČORKNUTÝ KÓD*/
+
+/* Hide the link that should open and close the topnav on small screens */
+#navbar .icon {
+  display: none;
+}
+
+ /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 800px) {
+  #options a {display: none;}
+  #options a.icon {
+    display: block !important;
+    margin-right: 0px;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 800px) {
+  navbar.responsive {position: relative;}
+
+  navbar.responsive a {
+    display: block !important;
+  }
+    
+} 
+
+/*VLASTNÍ KÓD*/
+
+#intro {
+    text-align: center;
+}
+
+#slajdshow {
+    width: 100%;
+}
+
+#slajdimg {
+    display:block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 800px) {
+    #slajdimg {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.quote {
+    color: #545454;
+}

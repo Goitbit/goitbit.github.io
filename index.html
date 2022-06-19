@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Matěj Goitka</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script type="text/javascript" defer>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} </script>
+        <script type="text/javascript" defer src="slideshow.js"></script>
+        <script type="text/javascript" defer src="logo-animation.js"></script>
+    </head>
+    <body>
+<!--NAVBAR        -->
+    <navbar id="navbar" class="topnav">
+    <a id="logo" href="index.html">Matěj Goitka|</a>
+    <div id="options">
+        <a href="javascript:void(0);" class="icon" id="taikon" onclick="myFunction()">≡</a>
+     <a href="#home">O mně</a>
+     <a href="#news">Fotografie</a>
+     <a href="#contact">Kontakt</a>
+    </div>
+     </navbar>            
+    <hr>    
+<!--OBSAH        -->
+    <section id="intro">
+    <h1 style="font-weight: 500; font-size:2rem; margin-bottom:0.5rem;">Programátor a fotograf pochybné kvality</h1>
+    <q class="quote">Zde by se hodilo napsat něco chytrého</q>    
+    </section>
+        <br>
+        
+    <div id="slajdshow">
+    <img id="slajdimg" src="img1.jpg">    
+    </div>
+        
+    </body>
+</html>
