@@ -51,6 +51,14 @@ overlay.style.backgroundColor = transitionColor;
     }
 });    
     
+function loadImage(){
+    const img = new Image();   // Create new img element
+img.addEventListener('load', function() {
+    return true;
+}, false);
+img.src = slides[slideIndex].src; // Set source path
+}
+    
 function changeCircles(){
 slideCircles.innerText = "";
 for (var i = 0; i < slides.length; i++){
@@ -63,6 +71,7 @@ for (var i = 0; i < slides.length; i++){
 }
     
 function changeImg(){
+loadImage();
 imgEm.src = slides[slideIndex].src; 
 slideDescription.innerText = slides[slideIndex].text;
 changeCircles();
