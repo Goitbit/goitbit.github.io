@@ -70,45 +70,65 @@ hr {
 }
 
 #slajdshow {
-    width: 100%;
+    width: 70%;
     position: relative;
-    max-width: 100%;
-}
-
-#slajdimg {
-    display:block;
-    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
+#slajddescription {
+    bottom: 0;
+    width: 100%;
+    background-color: #585454a8;
+    position: absolute;
+    margin: 0;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#slajdoverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255 255 255 / 0%);
+    transition: background-color 1s ease;
+    position:absolute;    
+}
+
+#slajdimg {
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
 #arrows a {   
     position: absolute;
-    top: 15rem;  
-    padding: 2rem;
+    top: 55%;
+    padding: 1.5rem;
     background-color: #585454a8;
     color: white;
-    border-radius:1rem;
+    border-radius: 1rem;
     user-select: none;
 }
 
 #leftarrow {
-    left:15%;
+    left:0;
 }
 
 #rightarrow {
-    right:15%;
+    right:0;
 }
 
-#slajddescription {
-    bottom: 0;
-    width: 70%;
-    margin-left:inherit;
-    margin-right:inherit;
-    background-color: #585454a8;
-    height: 5rem;
-    position:absolute;
+#slajdcircles {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
 }
+
 
 #arrows a:hover {
     background-color: black;
@@ -118,7 +138,7 @@ hr {
 
 
 @media screen and (max-width: 800px) {
-    #slajdimg {
+    #slajdshow {
         width: 100%;
         max-width: 100%;
     }
