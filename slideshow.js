@@ -27,7 +27,21 @@ slides = [
     
 slideDescription.innerText = slides[slideIndex].text;
     
-        // always checking if the element is clicked, if so, do alert('hello')
+    
+//Načti obrázky
+    
+function loadImages(){
+for (var i = 0; i < slides.length; i++){
+    const img = new Image();   // Create new img element
+    img.addEventListener('load', function() {
+    return true;
+    }, false);
+    img.src = slides[i].src; // Set source path
+    }
+}    
+loadImages();
+    
+    
 rightArrow.addEventListener("click", () => {
 overlay.style.backgroundColor = transitionColor;  
     if (slideIndex < slides.length - 1) {
@@ -51,13 +65,6 @@ overlay.style.backgroundColor = transitionColor;
     }
 });    
     
-function loadImage(){
-    const img = new Image();   // Create new img element
-img.addEventListener('load', function() {
-    return true;
-}, false);
-img.src = slides[slideIndex].src; // Set source path
-}
     
 function changeCircles(){
 slideCircles.innerText = "";
@@ -71,7 +78,6 @@ for (var i = 0; i < slides.length; i++){
 }
     
 function changeImg(){
-loadImage();
 imgEm.src = slides[slideIndex].src; 
 slideDescription.innerText = slides[slideIndex].text;
 changeCircles();
