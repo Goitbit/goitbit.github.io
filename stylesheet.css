@@ -89,6 +89,7 @@ hr {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 3;
 }
 
 #slajdoverlay {
@@ -97,13 +98,15 @@ hr {
     background-color: rgb(255 255 255 / 0%);
     transition: background-color 1s ease;
     position:absolute;    
+    display:none;
 }
 
 #slajdimg {
     display: block;
     max-width: 100%;
     margin-left: auto;
-    margin-right: auto;  
+    margin-right: auto;
+    transition: filter 0.5s ease;
 }
 
 #arrows a {   
@@ -130,7 +133,13 @@ hr {
     width: 100%;
     color: white;
     font-size: 2.5rem;
-    user-select: none;    
+    user-select: none; 
+    z-index: 2;
+}
+
+.hideimg {
+    display:none;
+    position:absolute;
 }
 
 

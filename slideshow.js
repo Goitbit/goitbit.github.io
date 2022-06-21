@@ -6,7 +6,7 @@ var slideDescription = document.getElementById("slajddescription");
 var slideCircles = document.getElementById("slajdcircles");
 var leftArrow = document.getElementById("leftarrow");
 var rightArrow = document.getElementById("rightarrow");
-var transitionColor = "rgb(98 135 145 / 45%)";
+var transitionColor = "brightness(0.6)";
     
 
 
@@ -30,20 +30,20 @@ slideDescription.innerText = slides[slideIndex].text;
     
 //Načti obrázky
     
-function loadImages(){
-for (var i = 0; i < slides.length; i++){
-    const img = new Image();   // Create new img element
-    img.addEventListener('load', function() {
-    return true;
-    }, false);
-    img.src = slides[i].src; // Set source path
-    }
-}    
-loadImages();
+//function loadImages(){
+//for (var i = 0; i < slides.length; i++){
+//    const img = new Image();   // Create new img element
+//    img.addEventListener('load', function() {
+//    return true;
+//    }, false);
+//    img.src = slides[i].src; // Set source path
+//    }
+//}    
+//loadImages();
     
     
 rightArrow.addEventListener("click", () => {
-overlay.style.backgroundColor = transitionColor;  
+imgEm.style.filter = transitionColor;  
     if (slideIndex < slides.length - 1) {
     slideIndex += 1;
     changeImg();      
@@ -55,7 +55,7 @@ overlay.style.backgroundColor = transitionColor;
     
         // always checking if the element is clicked, if so, do alert('hello')
 leftArrow.addEventListener("click", () => {
-overlay.style.backgroundColor = transitionColor;
+imgEm.style.filter = transitionColor;
     if (slideIndex > 0) {
     slideIndex -= 1;
     changeImg();
@@ -81,8 +81,8 @@ function changeImg(){
 imgEm.src = slides[slideIndex].src; 
 slideDescription.innerText = slides[slideIndex].text;
 changeCircles();
-var transition = setTimeout( function() {overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
-clearTimeout(transition);                                         }, 1000);
+var transition = setTimeout( function() {imgEm.style.filter = "brightness(1)";
+clearTimeout(transition);                                         }, 600);
 }      
 });
             
