@@ -85,4 +85,7 @@ var transition = setTimeout( function() {imgEm.style.filter = "brightness(1)";
 clearTimeout(transition);                                         }, 600);
 }      
 });
+
+
+
             

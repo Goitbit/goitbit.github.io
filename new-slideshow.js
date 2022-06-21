@@ -31,6 +31,7 @@ for (var i = 0; i < slides.length; i++){
     elem.setAttribute("id", idName);
     elem.setAttribute("class", "slideimg fade");
     elem.setAttribute("src", slides[i].src);
+    if (i == slideIndex){ elem.style.display = "block"; }
     containerEm.appendChild(elem);
 }
     
@@ -66,7 +67,6 @@ for (var i = 0; i < slides.length; i++){
         }
     }
 }    
-
 function showSlides(){
     for (var i = 0; i < slides.length; i++){
         document.getElementById("img" + i + ".jpg").style.display = "none"; 
@@ -77,5 +77,4 @@ function showSlides(){
 }
 
 showSlides();
-
 });    

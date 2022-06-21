@@ -116,7 +116,7 @@ hr {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    transition: filter 0.5s ease;
+    transition: display 0.5s ease;
 }
 
 .slideimg {
@@ -196,8 +196,68 @@ hr {
     max-width: 14rem;
     }
     
+    /* O MNĚ STRÁNKA  */
+    
+    #mephoto {
+    max-width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float:none !important;
+    }
+    
+    #metextcontainer {
+    float: none !important;
+    width: 100% !important;
+    text-align: center;
+    }
+    
+    #meheadline {
+    padding-left: 0 !important;
+    float: none !important;
+    }
+    
+    #metextcontainer p {
+    float: none !important;
+    padding-left:0 !important;
+    }
+    
+    
+    
 }
 
 .quote {
     color: #545454;
+}
+
+#mephoto {
+max-width: 40%;
+float:left;
+
+} 
+
+#meheadline {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    float: left;
+    margin-top:0.4rem;
+    padding-left: 1rem;
+    width: 100%;
+}
+
+#metextcontainer p {
+    float:left;
+    padding-left:1rem;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+#metextcontainer {
+    float:right;
+    width:60%;
+}
+
+#metextcontainer br {
+    line-height: 2rem;
 }

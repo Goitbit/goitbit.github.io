@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Matěj Goitka</title>
+        <meta lang="cs">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script type="text/javascript" defer>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} </script>
+<!--        <script type="text/javascript" defer src="slideshow.js"></script>-->
+<!--        <script type="text/javascript" defer src="new-slideshow.js"></script>-->
+        <script type="text/javascript" defer src="logo-animation.js"></script>
+    </head>
+    <body>
+<!--NAVBAR        -->
+    <navbar id="navbar" class="topnav">
+    <a id="logo" href="index.html">Matěj Goitka|</a>
+    <div id="options">
+        <a href="javascript:void(0);" class="icon" id="taikon" onclick="myFunction()">≡</a>
+     <a href="about.html" style="color:black; font-weight: bold;">O mně</a>
+     <a href="#news">Fotografie</a>
+     <a href="#contact">Kontakt</a>
+    </div>
+     </navbar>            
+    <hr>    
+<!--OBSAH        -->
+    <section id="aboutbox" class="fade">
+    <img src="me2.jpg" id="mephoto">
+    <div id="metextcontainer">
+    <h1 id="meheadline">Matěj Goitka – programátor a fotograf</h1>
+    <p>Zdravím, jmenuji se Matěj Goitka a jsem sedmnáctiletý student střední průmyslové školy sdělovací techniky.</p>
+    <p>Rád se věnuji programování webových stránek a aplikací, převážně s využitím JavaScriptu a Pythonu.</p>
+    <p>Mým koníčkem je také fotografování, nejraději fotografuji přírodu a architekturu.</p>
+    </div>
+    </section>
+        
+    </body>
+</html>
