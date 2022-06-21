@@ -79,6 +79,16 @@ hr {
     margin-right: auto;
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
 #slajddescription {
     bottom: 0;
     width: 100%;
@@ -109,6 +119,16 @@ hr {
     transition: filter 0.5s ease;
 }
 
+.slideimg {
+    display: none;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: filter 0.5s ease;
+}
+
+
+
 #arrows a {   
     position: absolute;
     top: 55%;
@@ -117,6 +137,7 @@ hr {
     color: white;
     border-radius: 1rem;
     user-select: none;
+    z-index: 3;
 }
 
 #leftarrow {
