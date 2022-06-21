@@ -6,14 +6,14 @@ var slideDescription = document.getElementById("slajddescription");
 var slideCircles = document.getElementById("slajdcircles");
 var leftArrow = document.getElementById("leftarrow");
 var rightArrow = document.getElementById("rightarrow");
-var transitionColor = "rgb(98 135 145 / 56%)";
+var transitionColor = "rgb(98 135 145 / 45%)";
     
 
 
 slides = [
     {
         src: "img1.jpg",
-        text: "Západ slunce v Krkonoších"
+        text: "Západ slunce"
     },
     {
         src: "img2.jpg",
@@ -82,7 +82,7 @@ imgEm.src = slides[slideIndex].src;
 slideDescription.innerText = slides[slideIndex].text;
 changeCircles();
 var transition = setTimeout( function() {overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
-clearTimeout(transition);                                         }, 500);
+clearTimeout(transition);                                         }, 1000);
 }      
 });
             
