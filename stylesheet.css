@@ -140,6 +140,31 @@ hr {
     z-index: 3;
 }
 
+#arrows a:hover {
+    background-color: black;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+#modalarrows a {   
+    position: absolute;
+    top: 55%;
+    padding: 1.5rem;
+    font-size:3rem;
+    color: white;
+    border-radius: 1rem;
+    user-select: none;
+    z-index: 6;
+}
+
+#modalarrows a:hover {
+    background-color: black;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
 #leftarrow {
     left:0;
 }
@@ -164,11 +189,6 @@ hr {
 }
 
 
-#arrows a:hover {
-    background-color: black;
-    transition: background-color 0.5s ease;
-    cursor: pointer;
-}
 
 
 @media screen and (max-width: 800px) {
@@ -260,4 +280,107 @@ float:left;
 
 #metextcontainer br {
     line-height: 2rem;
+}
+
+.trymodal {
+    width:25%;
+}
+
+.trymodal:hover {
+    cursor: pointer;
+}
+
+
+#modalimg {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-width: 800px;
+  max-height: 100%;
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  z-index: 5;    
+}
+
+@keyframes zoom {
+  from {transform:scale(0); opacity: .01}
+  to {transform:scale(1); opacity: 1;}
+}
+
+.modalfade {
+ animation-name: modalfade !important;
+ animation-duration: 0.3s !important;
+}
+
+@keyframes modalfade {
+    from {transform:scale(1.1)}
+    to { transform:scale(1)}
+}
+
+#modalcross {
+    font-size: 2rem;
+    right: 1rem;
+    position: absolute;
+    color: white;
+    user-select: none;
+    transition: color 0.5s ease;
+}
+
+#modalcross:hover {
+    color: #b1b1b1;
+    cursor: pointer;
+}
+
+#modalthing {
+    display:none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    position:fixed;
+}
+
+
+/*ČORKNUTÝ KÓD FOTO ALBUM*/
+
+
+.fotorow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content:  space-around;
+  align-items: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.fotocolumn {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.fotocolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .fotocolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .fotocolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Matěj Goitka</title>
+        <meta lang="cs">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script type="text/javascript" defer>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+} </script>
+<!--        <script type="text/javascript" defer src="slideshow.js"></script>-->
+<!--        <script type="text/javascript" defer src="new-slideshow.js"></script>-->
+        <script type="text/javascript" defer type="module" src="modal.js"></script>
+        <script type="text/javascript" defer src="logo-animation.js"></script>
+    </head>
+    <body>
+<!--NAVBAR        -->
+    <navbar id="navbar" class="topnav">
+    <a id="logo" href="index.html">Matěj Goitka|</a>
+    <div id="options">
+        <a href="javascript:void(0);" class="icon" id="taikon" onclick="myFunction()">≡</a>
+     <a href="about.html">O mně</a>
+     <a href="photos.html" style="color:black; font-weight: bold;">Fotografie</a>
+     <a href="#contact">Kontakt</a>
+    </div>
+     </navbar>            
+    <hr>    
+<!--OBSAH        -->
+      
+    <section id="photogallery" class="fade">
+    <h1 style="text-align: center; font-weight: 500;">Fotografie</h1>    
+    <div class="fotorow">
+        <div class="fotocolumn">
+    <img src="img4.jpg" class="trymodal" onclick="openModal(0);">
+        </div>
+        <div class="fotocolumn">
+    <img src="img2.jpg" class="trymodal" onclick="openModal(1);"> 
+    <img src="img1.jpg" class="trymodal" onclick="openModal(3);">
+        </div>
+        <div class="fotocolumn">
+        <img src="img3.jpg" class="trymodal" onclick="openModal(2);"> 
+        <img src="img6.jpg" class="trymodal" onclick="openModal(4)">   
+        </div>
+        <div class="fotocolumn">
+        <img src="img5.jpg" class="trymodal" onclick="openModal(5)">    
+        </div>
+    </div>    
+    </section>    
+        
+    <!-- MODAL Galerie    -->
+        <div id="modalthing">
+    <div id="modalarrows">
+    <a id="leftarrow">⇐</a>
+    <a id="rightarrow">⇒</a>
+    </div>
+    <span id="modalcross">🗙</span>    
+    <img src="img1.jpg" id="modalimg"> 
+    </div>    
+        
+    </body>
+</html>
