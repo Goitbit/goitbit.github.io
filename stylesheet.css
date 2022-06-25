@@ -325,6 +325,7 @@ float:left;
     color: white;
     user-select: none;
     transition: color 0.5s ease;
+    z-index: 8;
 }
 
 #modalcross:hover {
