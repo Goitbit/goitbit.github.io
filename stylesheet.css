@@ -136,6 +136,9 @@ hr {
     background-color: #585454a8;
     color: white;
     border-radius: 1rem;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     user-select: none;
     z-index: 3;
 }
@@ -153,6 +156,9 @@ hr {
     font-size:3rem;
     color: white;
     border-radius: 1rem;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     user-select: none;
     z-index: 6;
 }
@@ -186,7 +192,10 @@ hr {
     width: 100%;
     color: white;
     font-size: 2.5rem;
-    user-select: none; 
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
     z-index: 2;
 }
 
@@ -330,6 +339,9 @@ float:left;
     right: 1rem;
     position: absolute;
     color: white;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
     user-select: none;
     transition: color 0.5s ease;
     z-index: 8;
@@ -356,18 +368,20 @@ float:left;
 
 
 .fotorow {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  justify-content:  space-around;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2px;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 }
 
 /* Create four equal columns that sits next to each other */
 .fotocolumn {
-  flex: 24%;
-  max-width: 24%;
-  padding: 0 4px;
+    flex: 32%;
+    max-width: 33%;
+    padding: 0px 3px;
 }
 
 .fotocolumn img {
@@ -390,4 +404,71 @@ float:left;
     flex: 100%;
     max-width: 100%;
   }
+}
+
+/*VLASTNÍ KÓD FOTO STRÁNKA*/
+
+#fotobox {
+        width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#fotoheadline {
+        font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0.4rem;
+}
+
+.genrefoto {
+    width: 100%;
+    height: 12rem;
+    object-position: center;
+    object-fit: cover;
+    filter: brightness(1);
+    transition: filter 0.75s ease;    
+}
+
+.genrebox {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.genrebox:hover {
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.genrebox:hover .genrefoto {
+    filter: brightness(0.65);
+}
+
+.genrebox:hover .genrecaption {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.genrecaption {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #e7e7e7;
+    padding-bottom:0;
+    padding-top:0;
+    transition: padding-bottom 0.75s ease, padding-top 0.75s ease;
 }
