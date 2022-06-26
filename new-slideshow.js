@@ -31,7 +31,9 @@ for (var i = 0; i < slides.length; i++){
     elem.setAttribute("id", idName);
     elem.setAttribute("class", "slideimg fade");
     elem.setAttribute("src", slides[i].src);
-    if (i == slideIndex){ elem.style.display = "block"; }
+    if (i == slideIndex){ elem.style.display = "block"; elem.setAttribute("loading", "eager") } else {
+    elem.setAttribute("loading", "lazy")
+    }
     containerEm.appendChild(elem);
 }
     
