@@ -14,7 +14,21 @@ for (var i = 0; i < imgsArray.length; i++){
     imgsArray[i].newSrc = imgsArray[i].src.replace("-mini", "");
 }
 
+//Skript pro načítání obrázků
+function preloadImage(url)
+{
+var img=new Image();
+img.src=url;
+}  
+
 function openModal(x){
+    
+//Přednačti obrázky    
+for (var i = 0; i < imgsArray.length; i++){    
+    preloadImage(imgsArray[i].newSrc);
+}
+    
+    
 modalImg.style.animationName = "zoom";    
 modalIndex = x;
 var triggerID = event.target;

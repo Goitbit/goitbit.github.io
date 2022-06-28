@@ -472,3 +472,10 @@ float:left;
     padding-top:0;
     transition: padding-bottom 0.75s ease, padding-top 0.75s ease;
 }
+
+#genreheadline {
+    text-align: center;
+    font-weight: 500;
+    border: 1px solid gray;
+    padding-bottom: 0.2rem;
+}
