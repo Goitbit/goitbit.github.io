@@ -307,7 +307,7 @@ float:left;
 }
 
 
-#modalimg {
+.modalimg {
   margin: auto;
   display: block;
   max-width: 100%;
@@ -326,12 +326,12 @@ float:left;
 
 .modalfade {
  animation-name: modalfade !important;
- animation-duration: 0.3s !important;
+ animation-duration: 0.9s !important;
 }
 
 @keyframes modalfade {
-    from {transform:scale(1.1)}
-    to { transform:scale(1)}
+    from {filter:brightness(0)}
+    to { filter:brightness(1)}
 }
 
 #modalcross {
