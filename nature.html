@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Matěj Goitka</title>
@@ -16,6 +17,7 @@ function myFunction() {
 } </script>
 <!--        <script type="text/javascript" defer src="slideshow.js"></script>-->
 <!--        <script type="text/javascript" defer src="new-slideshow.js"></script>-->
+        <script type="text/javascript" defer type="module" src="modal.js"></script>
         <script type="text/javascript" defer src="logo-animation.js"></script>
     </head>
     <body>
@@ -23,7 +25,7 @@ function myFunction() {
     <navbar id="navbar" class="topnav">
     <a id="logo" href="index.html">Matěj Goitka|</a>
     <div id="options">
-    <a href="javascript:void(0);" class="icon" id="taikon" onclick="myFunction()">≡</a>
+        <a href="javascript:void(0);" class="icon" id="taikon" onclick="myFunction()">≡</a>
      <a href="about">O mně</a>
      <a href="photos" style="color:black; font-weight: bold;">Fotografie</a>
      <a href="apps">Aplikace</a>           
@@ -32,20 +34,38 @@ function myFunction() {
      </navbar>            
     <hr>    
 <!--OBSAH        -->
-    <section class="fotobox fade">
-    <h1 class="fotoheadline">Fotografie</h1>
+      
+    <!-- FOTOGALERIE        -->
+    <section id="photogallery" class="fade">
+    <h1 id="genreheadline">City</h1>    
+    <div class="fotorow">
+        <div class="fotocolumn">
+    <img src="img16-mini.jpg" class="trymodal" onclick="openModal(0);">
+        </div>
+        <div class="fotocolumn">
+    <img src="img10-mini.jpg" class="trymodal" onclick="openModal(1);"> 
+    <img src="img11-mini.jpg"  class="trymodal" onclick="openModal(2);">
+        </div>
+        <div class="fotocolumn">
+        <img src="img12-mini.jpg" class="trymodal" onclick="openModal(3);"> 
+        <img src="img3-mini.jpg" class="trymodal" onclick="openModal(4)">   
+        </div>
+        </div>
+        <div class="fotorow">
+        <div class="fotocolumn">
+        <img src="img15-mini.jpg" class="trymodal" onclick="openModal(5)">         
+        </div>    
+    </div>    
+    </section>    
         
-    <a href="city" class="genrebox">
-    <img src="img6.jpg" class="genrefoto">        
-    <span class="genrecaption">CITY</span>    
-    </a>
-        
-    <a href="nature" class="genrebox">
-    <img src="img11.jpg" class="genrefoto">        
-    <span class="genrecaption">NATURE</span>    
-    </a>        
-    </section>
-                
+    <!-- MODAL Galerie    -->
+        <div id="modalthing">
+    <div id="modalarrows">
+    <a id="leftarrow">⇐</a>
+    <a id="rightarrow">⇒</a>
+    </div>
+    <span id="modalcross">X</span>    
+    </div>    
         
     </body>
 </html>

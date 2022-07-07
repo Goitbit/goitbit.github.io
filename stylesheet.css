@@ -408,7 +408,7 @@ float:left;
 
 /*VLASTNÍ KÓD FOTO STRÁNKA*/
 
-#fotobox {
+.fotobox {
         width: 100%;
     display: flex;
     flex-direction: column;
@@ -418,7 +418,7 @@ float:left;
     align-items: center;
 }
 
-#fotoheadline {
+.fotoheadline {
         font-weight: 500;
     font-size: 2rem;
     margin-bottom: 1.5rem;
@@ -446,6 +446,7 @@ float:left;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    padding-bottom: 1rem;
 }
 
 .genrebox:hover {
