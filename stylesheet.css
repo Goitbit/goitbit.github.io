@@ -1,3 +1,4 @@
+
 body {
     background-color: #cbcbcb;
     font-family: helvetica, arial, sans-serif;
@@ -479,4 +480,64 @@ float:left;
     font-weight: 500;
     border: 1px solid gray;
     padding-bottom: 0.2rem;
+}
+
+/*APLIKACE*/
+
+#appsection {
+    margin-top: 2rem;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#appimg {
+max-width: 80%;
+max-height: 60%;
+display: block;
+margin-left: auto;
+margin-right: auto;   
+margin-bottom: 0.5rem;
+transition: 0.5s;
+filter:brightness(0.75);    
+}
+
+
+#appbox {
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 33rem;
+  padding: 1rem;
+  text-align: center;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.techlogo { 
+  max-height: 3rem;
+  top: -2%;
+  left: -2%;
+  position: absolute;
+  filter:saturate(0);
+  transition: 0.5s;
+}
+
+#appbox:hover {
+  background-color: #758296;
+  cursor: pointer;
+}
+
+#appbox:hover .techlogo {
+    filter:saturate(1);
+}
+
+#appbox:hover #appimg {
+    filter:brightness(1);
+}
+
+@media screen and (max-width: 800px) {
+    #appbox {
+    max-width: 100%;
+    }
 }
