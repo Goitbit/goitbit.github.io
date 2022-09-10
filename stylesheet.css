@@ -557,7 +557,11 @@ float:left;
 	transition: 0.5s;
 	margin-bottom: 1rem;
 	position: relative;
+<<<<<<< HEAD
 	background-color: var(--box-color);
+=======
+	background-color: #9d9d9d;
+>>>>>>> 4ea5fab54be6beb3f81cac3700f8900d24c815a3
 }
 
 .techlogo { 
