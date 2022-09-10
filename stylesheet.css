@@ -485,10 +485,11 @@ float:left;
 /*APLIKACE*/
 
 #appsection {
-    margin-top: 2rem;
-    display:flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
 }
 
 #appimg {
@@ -504,14 +505,15 @@ filter:brightness(0.75);
 
 
 #appbox {
-  border: 1px solid black;
-  border-radius: 20px;
-  width: 33rem;
-  padding: 1rem;
-  text-align: center;
-  transition: 0.5s;
-  margin-bottom: 1rem;
-  position: relative;
+	/* border: 1px solid black; */
+	border-radius: 20px;
+	width: 33rem;
+	padding: 1rem;
+	text-align: center;
+	transition: 0.5s;
+	margin-bottom: 1rem;
+	position: relative;
+	background-color: #9d9d9d;
 }
 
 .techlogo { 
