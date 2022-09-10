@@ -540,7 +540,7 @@ float:left;
 
 @media screen and (max-width: 800px) {
     #appbox {
-    max-width: 100% !important;
+    width: 85% !important;
     }
 }
 
