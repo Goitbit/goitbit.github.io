@@ -27,3 +27,4 @@ toggleSwitch.onclick = function() {
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('data-theme', 'dark');              
     }    
+}
