@@ -91,7 +91,7 @@ hr {
   navbar.responsive {position: relative;}
 
   navbar.responsive a {
-    display: block;
+    display: block !important;
   }
     
     
