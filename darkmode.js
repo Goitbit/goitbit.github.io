@@ -3,17 +3,20 @@ window.onload=function(){
 var theme = localStorage.getItem('data-theme');    
     
    if(theme=='light'){
+    toggleSwitch.innerText = "Tmavý režim";
      document.documentElement.setAttribute('data-theme', 'light');
    }else if(theme==''){
+     toggleSwitch.innerText = "Světlý režim";       
      document.documentElement.setAttribute('data-theme', 'dark');
    }else if(theme=='dark'){
+     toggleSwitch.innerText = "Světlý režim";       
      document.documentElement.setAttribute('data-theme' , 'dark');
    }
  }
 
 
 
-toggleSwitch.onclick = function() {
+toggleSwitch.onclick = function() {    
     if (toggleSwitch.innerText == "Světlý režim") { //Přepni do světlého režimu
         toggleSwitch.innerText = "Tmavý režim";        
         document.documentElement.setAttribute('data-theme', 'light');
