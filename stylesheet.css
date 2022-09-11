@@ -79,7 +79,7 @@ hr {
 
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 800px) {
-  #options a {display: none;}
+  #options a {display: none !important;}
   #options a.icon {
     display: block !important;
     margin-right: 0px;
@@ -88,7 +88,7 @@ hr {
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 800px) {
-  navbar.responsive {position: relative;}
+  navbar.responsive {position: relative !important;}
 
   navbar.responsive a {
     display: block !important;
