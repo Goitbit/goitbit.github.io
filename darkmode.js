@@ -1,5 +1,5 @@
-window.onload=function(){
 const toggleSwitch = document.getElementById("darkmodeSwitch");
+window.onload=function(){
 var theme = localStorage.getItem('data-theme');    
     
    if(theme=='light'){
