@@ -12,7 +12,7 @@ var theme = localStorage.getItem('data-theme');
      toggleSwitch.innerText = "Světlý režim";       
      document.documentElement.setAttribute('data-theme' , 'dark');
    }
- }
+ 
 
 
 
