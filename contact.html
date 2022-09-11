@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Matěj Goitka | O mně</title>
+        <title>Matěj Goitka | Kontakt</title>
         <meta lang="cs">
         <meta charset="utf-8">
         <link rel="stylesheet" href="stylesheet.css">
@@ -17,7 +17,8 @@ function myFunction() {
 } </script>
 <!--        <script type="text/javascript" defer src="slideshow.js"></script>-->
 <!--        <script type="text/javascript" defer src="new-slideshow.js"></script>-->
-        <script type="text/javascript" defer src="logo-animation.js"></script>          
+        <script type="text/javascript" defer src="logo-animation.js"></script>   
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Ikony -->    
     </head>
     <body>
 <!--NAVBAR        -->
@@ -26,21 +27,27 @@ function myFunction() {
     <div id="options">
     <button id="darkmodeSwitch">Světlý režim</button>       
         <a href="javascript:void(0);" class="icon" id="taikon" onclick="myFunction()">≡</a>
-     <a href="about" style="color:var(--font-color); font-weight: bold;">O mně</a>
+     <a href="about">O mně</a>
      <a href="photos">Fotografie</a>
      <a href="apps">Aplikace</a>        
-     <a href="contact">Kontakt</a>
+     <a href="contact" style="color:var(--font-color); font-weight: bold;">Kontakt</a>
     </div>
      </navbar>            
     <hr>    
 <!--OBSAH        -->
-    <section id="aboutbox" class="fade">
-    <img src="me2.jpg" id="mephoto">
-    <div id="metextcontainer">
-    <h1 id="meheadline">Matěj Goitka – programátor a fotograf</h1>
-    <p>Zdravím, jmenuji se Matěj Goitka a jsem sedmnáctiletý student střední průmyslové školy sdělovací techniky.</p>
-    <p>Rád se věnuji programování webových stránek a aplikací, převážně s využitím JavaScriptu a Pythonu.</p>
-    <p>Mým koníčkem je také fotografování, nejraději fotografuji přírodu a architekturu.</p>
+    <section id="contactsection" class="fade">
+    <h1 class="fotoheadline fade">Kontakt</h1>        
+    <div id="contactbox">
+        
+    <span class="contactrow">
+    <i class='fas fa-envelope contacticons'></i><a href="mailto:matej.goitka@gmail.com">matej.goitka@gmail.com</a>
+    </span>    
+
+    <br>
+        
+    <span class="contactrow">
+    <i class='fab fa-github contacticons'></i><a href="https:\\www.github.com\Goitbit">Goitbit</a>        
+    </span>    
     </div>
     </section>
         

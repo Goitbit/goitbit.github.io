@@ -81,7 +81,7 @@ hr {
 @media screen and (max-width: 800px) {
   #options a {display: none;}
   #options a.icon {
-    display: block ;
+    display: block !important;
     margin-right: 0px;
   }
 }
@@ -468,6 +468,7 @@ float:left;
     font-size: 2rem;
     margin-bottom: 1.5rem;
     margin-top: 0.4rem;
+    text-align: center;
 }
 
 .genrefoto {
@@ -572,6 +573,7 @@ float:left;
 #appbox:hover {
   background-color: var(--box-hover-color);
   cursor: pointer;
+  width: 50%;
 }
 
 #appbox:hover .techlogo {
@@ -594,4 +596,35 @@ float:left;
 
 .justlink:hover {
     text-decoration: none;
+}
+
+#contactsection {
+    margin-left: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#contactbox {
+    background-color: var(--box-color);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.contacticons {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.contactrow {
+    display:inline-flex;
+    align-items:center;
+    margin-bottom: 2rem;
+}
+
+#contactbox span:last-child {
+    margin-bottom: 1rem;
 }
